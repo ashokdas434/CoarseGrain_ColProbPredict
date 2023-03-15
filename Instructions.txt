@@ -1,0 +1,7 @@
+In this folder, the file 'in.CG2_erratic' is the input file for coarse-grained system with coarse-grained ratio 2. The particle size distribution followed in this example case is random (erratic) in nature. To run LIGGGHTS-Public using the modified code, follow the given steps:
+
+1. Copy the compute_contact_atom.cpp and compute_contact_atom.h, and place it in a fresh src of LIGGGHTS-Public software.
+2. Compile the src using "make auto" command to create the executable 'lmp_auto'.
+3. Copy the executable 'lmp_auto'  in the simulation working folder.
+4. Run 'mpirun -np 1 lmp_auto < in.CG2_erratic' in terminal in the working folder.
+5. The total collisions between different particle size clsses are stored as output in '0.txt' file. 
